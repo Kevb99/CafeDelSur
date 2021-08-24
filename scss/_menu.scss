@@ -1,0 +1,56 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url("../img/bg-textura.png");
+    font-family: "Merienda", cursive;
+}
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    .contenedor {
+        width: 80%;
+        border: 2px solid #000;
+        padding: 10px;
+        margin-top: 100px;
+        .contenedor2 {
+            border: 2px solid #000;
+            padding-bottom: 50px;
+            .titulo {
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 20px;
+
+                @media (max-width: 700px){
+                    font-size: 20px;
+                }
+            }
+            .platillos {
+                display: flex;
+                justify-content: space-around;
+                ul {
+                    width: 100%;
+                    text-align: center;
+                    list-style: none;
+                    margin: 0;
+                    padding: 10px 50px;
+                    li {
+                        font-size: 30px;
+                        line-height: 150px;
+                        border-bottom: 5px dotted #000;
+
+                        @media (max-width: 700px){
+                            font-size: 18px;
+                            border-bottom: 3px dotted #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

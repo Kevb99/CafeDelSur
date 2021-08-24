@@ -1,0 +1,37 @@
+.galeria {
+    width: 100%;
+    @media(max-width: 350px){
+        width: 100%;
+    }
+    // margin-top: 130px;
+    h2 {
+        font-size: 45px;
+        text-align: center;
+
+        @media (max-width: 700px) {
+            margin-top: 150px;
+            font-size: 25px;
+        }
+    }
+    .imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            width: 25%;
+            opacity: 0.7;
+
+            @media(max-width: 700px){
+                width: 50%;
+            }
+
+            @media(max-width: 350px){
+                width: 100%;
+            }
+
+            &:hover {
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}
